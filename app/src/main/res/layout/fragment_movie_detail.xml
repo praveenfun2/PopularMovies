@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/imageView" />
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginBottom="8dp"
+            android:layout_toRightOf="@id/imageView" />
+
+        <TextView
+            android:id="@+id/release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating"
+            android:layout_toRightOf="@id/imageView" />
+
+        <LinearLayout
+            android:id="@+id/videos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/overview"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/reviews"
+            android:layout_below="@id/videos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/star"
+            android:visibility="invisible"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:onClick="save"/>
+
+    </RelativeLayout>
+
+</ScrollView>
